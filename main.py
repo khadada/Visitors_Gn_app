@@ -5,6 +5,7 @@ center_position = 400
 left_position=20
 input_width = 3
 font_title = ('Arial',24,'normal')
+write_field_font = ('Arabic Traditional',12,'bold')
 # Window --------------------------
 window=Tk()
 window.title('Visitors GN Temacine')
@@ -41,13 +42,40 @@ alternative_label = Label(alternative_frame,text=':البديل')
 alternative_label.pack()
 alternative_input = Entry(alternative_frame,justify=RIGHT)
 alternative_input.pack()
-visitor_name_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
-visitor_name_frame.place(x=20,y=180)
 
+
+visitor_name_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_name_frame.place(x=600,y=180)
 visit_label_name = Label(visitor_name_frame,text=' :الإسم')
 visit_label_name.pack()
 visit_input_name = Entry(visitor_name_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
 visit_input_name.pack()
+
+
+visitor_family_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_family_frame.place(x=420,y=180)
+visit_label_family_n = Label(visitor_family_frame,text=' :اللقب')
+visit_label_family_n.pack()
+visit_input_family_n = Entry(visitor_family_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_family_n.pack()
+
+
+visitor_birthday_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_birthday_frame.place(x=240,y=180)
+visit_label_birthday = Label(visitor_birthday_frame,text=' :تاريخ الميلاد')
+visit_label_birthday.pack()
+visit_input_birthday = Entry(visitor_birthday_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_birthday.pack()
+
+
+
+visitor_birth_place_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_birth_place_frame.place(x=40,y=180)
+visit_label_birth_place = Label(visitor_birth_place_frame,text=' :مكان الميلاد')
+visit_label_birth_place.pack()
+visit_input_birth_place = Entry(visitor_birth_place_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_birth_place.pack()
+
 
 # Footer -----------------------
 
