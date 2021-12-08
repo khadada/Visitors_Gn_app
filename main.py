@@ -5,7 +5,6 @@ center_position = 400
 left_position=20
 input_width = 3
 font_title = ('Arial',24,'normal')
-write_field_font = ('Arabic Traditional',12,'bold')
 # Window --------------------------
 window=Tk()
 window.title('Visitors GN Temacine')
@@ -33,14 +32,14 @@ watchman_frame = Frame(window,relief=SUNKEN,bd=2)
 watchman_frame.pack()
 watchman_label = Label(watchman_frame,text=':الخفير')
 watchman_label.pack()
-watchman_input = Entry(watchman_frame,justify=RIGHT)
+watchman_input = Entry(watchman_frame,justify=CENTER,borderwidth=5,relief=FLAT)
 watchman_input.pack()
 # alternative
 alternative_frame = Frame(window,relief=SUNKEN,bd=2)
 alternative_frame.pack()
 alternative_label = Label(alternative_frame,text=':البديل')
 alternative_label.pack()
-alternative_input = Entry(alternative_frame,justify=RIGHT)
+alternative_input = Entry(alternative_frame,justify=CENTER,borderwidth=5,relief=FLAT)
 alternative_input.pack()
 
 
