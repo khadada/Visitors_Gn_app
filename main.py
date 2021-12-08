@@ -28,16 +28,26 @@ year_label.place(x=(left_position +60), y=40)
 year_input = Spinbox(window,from_=1962,to=2090,width=(input_width * 2))
 year_input.place(x=(left_position + 10) , y=40)
 # watchman
-watchman_label = Label(text=':الخفير')
+watchman_frame = Frame(window,relief=SUNKEN,bd=2)
+watchman_frame.pack()
+watchman_label = Label(watchman_frame,text=':الخفير')
 watchman_label.pack()
-watchman_input = Entry(window,justify=RIGHT)
+watchman_input = Entry(watchman_frame,justify=RIGHT)
 watchman_input.pack()
 # alternative
-alternative_label = Label(text=':البديل')
+alternative_frame = Frame(window,relief=SUNKEN,bd=2)
+alternative_frame.pack()
+alternative_label = Label(alternative_frame,text=':البديل')
 alternative_label.pack()
-alternative_input = Entry(window,justify=RIGHT)
+alternative_input = Entry(alternative_frame,justify=RIGHT)
 alternative_input.pack()
+visitor_name_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_name_frame.place(x=20,y=180)
 
+visit_label_name = Label(visitor_name_frame,text=' :الإسم')
+visit_label_name.pack()
+visit_input_name = Entry(visitor_name_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_name.pack()
 
 # Footer -----------------------
 
