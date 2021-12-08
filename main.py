@@ -92,11 +92,11 @@ visit_label_job.pack()
 visit_input_job = Entry(visitor_job_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
 visit_input_job.pack()
 
-visitor_adress_frame = Frame(window,relief=SUNKEN,bd=2,width=80)
-visitor_adress_frame.place(x=240,y=280)
-visit_label_adress = Label(visitor_adress_frame,text=' :الساكن بـ')
+visitor_address_frame = Frame(window,relief=SUNKEN,bd=2,width=80)
+visitor_address_frame.place(x=240,y=280)
+visit_label_adress = Label(visitor_address_frame,text=' :الساكن بـ')
 visit_label_adress.pack()
-visit_input_adress = Entry(visitor_adress_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_adress = Entry(visitor_address_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
 visit_input_adress.pack()
 
 
@@ -108,6 +108,25 @@ visit_label_phone = Label(visitor_phone_frame,text=' :رقم الهاتف ')
 visit_label_phone.pack()
 visit_input_phone = Entry(visitor_phone_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
 visit_input_phone.pack()
+
+visitor_ident_card_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_ident_card_frame.place(x=600,y=380)
+visit_label_ident_card = Label(visitor_ident_card_frame,text=' :بطاقة الهوية ')
+visit_label_ident_card.pack()
+visit_input_ident_card = Listbox(visitor_ident_card_frame,height=3,justify=RIGHT)
+visit_input_ident_card.insert(1,"بطاقة التعريف الوطنية")
+visit_input_ident_card.insert(2,"رخصة السياقة")
+visit_input_ident_card.insert(3,"جواز السفر ")
+visit_input_ident_card.pack()
+
+
+
+
+
+
+
+
+
 # Footer -----------------------
 
 
