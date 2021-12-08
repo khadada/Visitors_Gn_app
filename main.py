@@ -76,6 +76,38 @@ visit_input_birth_place = Entry(visitor_birth_place_frame,borderwidth=5,relief=F
 visit_input_birth_place.pack()
 
 
+
+visitor_parents_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_parents_frame.place(x=600,y=280)
+visit_label_parents = Label(visitor_parents_frame,text=' :الأب والأم')
+visit_label_parents.pack()
+visit_input_parents = Entry(visitor_parents_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_parents.pack()
+
+
+visitor_job_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_job_frame.place(x=420,y=280)
+visit_label_job = Label(visitor_job_frame,text=' :المهنة')
+visit_label_job.pack()
+visit_input_job = Entry(visitor_job_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_job.pack()
+
+visitor_adress_frame = Frame(window,relief=SUNKEN,bd=2,width=80)
+visitor_adress_frame.place(x=240,y=280)
+visit_label_adress = Label(visitor_adress_frame,text=' :الساكن بـ')
+visit_label_adress.pack()
+visit_input_adress = Entry(visitor_adress_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_adress.pack()
+
+
+
+
+visitor_phone_frame = Frame(window,relief=SUNKEN,bd=2,width=2)
+visitor_phone_frame.place(x=40,y=280)
+visit_label_phone = Label(visitor_phone_frame,text=' :رقم الهاتف ')
+visit_label_phone.pack()
+visit_input_phone = Entry(visitor_phone_frame,borderwidth=5,relief=FLAT,justify=RIGHT)
+visit_input_phone.pack()
 # Footer -----------------------
 
 
